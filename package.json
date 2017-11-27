@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.2",
