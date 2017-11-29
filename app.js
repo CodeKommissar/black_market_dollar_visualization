@@ -1,4 +1,3 @@
-// Dependencies
 var express          = require("express");
 var scrapeDolarToday = require('./scraper.js');
 
@@ -9,7 +8,9 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 // Every day scrape http://dolartoday.com
-//scrapeDolarToday();
+// (We'll call scrapeDolarToday() as soon as the server starts because Heroku...
+// won't let the server run 24/7)
+scrapeDolarToday();
 setInterval(scrapeDolarToday, 1000*60*60*24)
 
 // Render our index.html page in the "/" route
@@ -21,8 +22,3 @@ app.get("/", function(req, res){
 app.listen(port, function(){
   console.log("Server is listening on: " + port);
 });
-
-// Due to how Heroku works:
-// 1. Add a line to call scrapeDolarToday() every time the server starts again
-// 2. In the visualization script get the last line of .tsv file and... 
-// check if we're adding a new piece of data
