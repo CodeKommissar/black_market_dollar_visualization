@@ -1,3 +1,77 @@
+body {
+  margin: 0 auto;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  color: #566b78;
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
+    url("../images/header4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: #263d36;
+  background-image: url("../images/header1.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 5vw 2em;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+header a {
+  border: 2px solid green;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+header a:hover {
+  background:  green;
+  color: white;
+}
+
+main p {
+  margin: 2em auto 2em auto;
+  max-width: 50em;
+  text-align: center;
+  color: black;
+}
+
 h1 {
-  font-family: sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+a {
+  color: #e81c4f;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+.question {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.explanation {
+  text-align: left;
 }

@@ -10,7 +10,7 @@ app.set("view engine", "ejs");
 // Every day scrape http://dolartoday.com
 // (We'll call scrapeDolarToday() as soon as the server starts because Heroku...
 // won't let the server run 24/7)
-scrapeDolarToday();
+//scrapeDolarToday();
 setInterval(scrapeDolarToday, 1000*60*60*24)
 
 // Render our index.html page in the "/" route
